@@ -11,18 +11,66 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 import { MdMyLocation } from "react-icons/md";
 
 const Header = () => {
+	// Right Aside Bar Open
 	const openDrawer = () => {
 		const drawerCheckbox = document.getElementById("my-drawer-4");
 		if (drawerCheckbox) {
 			drawerCheckbox.checked = true;
 		}
 	};
+	// Right Aside Bar Close
 	const closeDrawer = () => {
 		const drawerToggle = document.getElementById("my-drawer-4");
 		if (drawerToggle) {
 			drawerToggle.checked = false;
 		}
 	};
+
+	// Left Aside Bar Open
+	const openLeftDrawer = () => {
+		const drawerCheckbox = document.getElementById("my-drawer");
+		if (drawerCheckbox) {
+			drawerCheckbox.checked = true;
+		}
+	};
+	// Left Aside Bar Close
+	const closeLeftDrawer = () => {
+		const drawerToggle = document.getElementById("my-drawer");
+		if (drawerToggle) {
+			drawerToggle.checked = false;
+		}
+	};
+
+	// Nav Items
+	const navItem = (
+		<>
+			<li className="group border-t-[1px] border-t-[#262626] lg:border-none">
+				<NavLink className="py-2 px-0 lg:px-3 text-[#9F9F9F] font-rubik font-medium lg:text-white lg:font-rajdhani lg:font-black uppercase lg:capitalize rounded group-hover:bg-[#270D15] group-hover:text-[#FF014F] transition-all duration-200">
+					home
+				</NavLink>
+			</li>
+			<li className="group border-t-[1px] border-t-[#262626] lg:border-none">
+				<NavLink className="py-2 px-0 lg:px-3 text-[#9F9F9F] font-rubik font-medium uppercase lg:text-white lg:font-rajdhani lg:font-black lg:capitalize group-hover:bg-[#270D15] group-hover:text-[#FF014F] transition-all duration-200">
+					about
+				</NavLink>
+			</li>
+			<li className="group border-t-[1px] border-t-[#262626] lg:border-none">
+				<NavLink className="py-2 px-0 lg:px-3 text-[#9F9F9F] font-rubik font-medium uppercase lg:text-white lg:font-rajdhani lg:font-black lg:capitalize group-hover:bg-[#270D15] group-hover:text-[#FF014F] transition-all duration-200">
+					services
+				</NavLink>
+			</li>
+			<li className="group border-t-[1px] border-t-[#262626] lg:border-none">
+				<NavLink className="py-2 px-0 lg:px-3 text-[#9F9F9F] font-rubik font-medium uppercase lg:text-white lg:font-rajdhani lg:font-black lg:capitalize group-hover:bg-[#270D15] group-hover:text-[#FF014F] transition-all duration-200">
+					projects
+				</NavLink>
+			</li>
+			<li className="group border-t-[1px] border-t-[#262626] lg:border-none">
+				<NavLink className="py-2 px-0 lg:px-3 text-[#9F9F9F] font-rubik font-medium uppercase lg:text-white lg:font-rajdhani lg:font-black lg:capitalize group-hover:bg-[#270D15] group-hover:text-[#FF014F] transition-all duration-200">
+					contact
+				</NavLink>
+			</li>
+		</>
+	);
 	return (
 		<header className="absolute w-full">
 			<div className="container">
@@ -31,71 +79,46 @@ const Header = () => {
 					<div className="logo">
 						<Link to="/" className="flex items-center gap-1">
 							<img
-								className="max-w-[40px] block"
+								className="w-[35px] xl:w-[40px] block"
 								src="https://i.ibb.co.com/gZDM6BLc/logocopy.png"
 								alt=""
 							/>
-							<span className="text-[35px] text-white font-rubik">
+							<span className="text-[25px] xl:text-[35px] text-white font-rubik">
 								Rakeeb
 							</span>
 						</Link>
 					</div>
 
 					{/* Menu Items */}
-					<nav>
-						<ul className="flex items-center gap-x-3">
-							<li className="group">
-								<NavLink className="py-2 px-3 text-white font-black capitalize rounded group-hover:bg-[#270D15] group-hover:text-[#FF014F] transition-all duration-200">
-									home
-								</NavLink>
-							</li>
-							<li className="group">
-								<NavLink className="py-2 px-3 text-white font-black capitalize group-hover:bg-[#270D15] group-hover:text-[#FF014F] transition-all duration-200">
-									about
-								</NavLink>
-							</li>
-							<li className="group">
-								<NavLink className="py-2 px-3 text-white font-black capitalize group-hover:bg-[#270D15] group-hover:text-[#FF014F] transition-all duration-200">
-									services
-								</NavLink>
-							</li>
-							<li className="group">
-								<NavLink className="py-2 px-3 text-white font-black capitalize group-hover:bg-[#270D15] group-hover:text-[#FF014F] transition-all duration-200">
-									projects
-								</NavLink>
-							</li>
-							<li className="group">
-								<NavLink className="py-2 px-3 text-white font-black capitalize group-hover:bg-[#270D15] group-hover:text-[#FF014F] transition-all duration-200">
-									contact
-								</NavLink>
-							</li>
-						</ul>
+					<nav className="hidden lg:block">
+						<ul className="flex items-center gap-x-3">{navItem}</ul>
 					</nav>
 
 					{/* Social Links */}
 					<div className="social-links">
 						<ul className="flex items-center gap-x-3">
-							<li className="group">
+							<li className="group hidden md:block">
 								<Link className="relative w-[40px] h-[40px] inline-flex items-center justify-center bg-[rgba(255,255,255,0.062745098)] rounded-full z-10 after:absolute after:w-[100%] after:h-[100%] after:top-0 after:left-0 after:bg-[#FF014F] after:rounded-full after:z-0 after:scale-0 group-hover:after:scale-100 after:transition-transform after:duration-300">
 									<FaInstagram className="text-white text-[18px] relative z-20" />
 								</Link>
 							</li>
-							<li className="group">
+							<li className="group hidden md:block">
 								<Link className="relative w-[40px] h-[40px] inline-flex items-center justify-center bg-[rgba(255,255,255,0.062745098)] rounded-full z-10 after:absolute after:w-[100%] after:h-[100%] after:top-0 after:left-0 after:bg-[#FF014F] after:rounded-full after:z-0 after:scale-0 group-hover:after:scale-100 after:transition-transform after:duration-300">
 									<FaLinkedinIn className="text-white text-[18px] relative z-20" />
 								</Link>
 							</li>
-							<li className="group">
+							<li className="group hidden md:block">
 								<Link className="relative w-[40px] h-[40px] inline-flex items-center justify-center bg-[rgba(255,255,255,0.062745098)] rounded-full z-10 after:absolute after:w-[100%] after:h-[100%] after:top-0 after:left-0 after:bg-[#FF014F] after:rounded-full after:z-0 after:scale-0 group-hover:after:scale-100 after:transition-transform after:duration-300">
 									<FaFacebookF className="text-white text-[18px] relative z-20" />
 								</Link>
 							</li>
-							<li className="group">
+							<li className="group hidden md:block">
 								<Link className="relative w-[40px] h-[40px] inline-flex items-center justify-center bg-[rgba(255,255,255,0.062745098)] rounded-full z-10 after:absolute after:w-[100%] after:h-[100%] after:top-0 after:left-0 after:bg-[#FF014F] after:rounded-full after:z-0 after:scale-0 group-hover:after:scale-100 after:transition-transform after:duration-300">
 									<FaBehance className="text-white text-[18px] relative z-20" />
 								</Link>
 							</li>
-							<li className="group">
+							{/* Large Screen Drawer */}
+							<li className="group hidden lg:block">
 								<span
 									onClick={openDrawer}
 									className="relative w-[40px] cursor-pointer h-[40px] inline-flex flex-col items-center border-[1px] border-brand justify-center bg-transparent rounded-full z-10 after:absolute after:w-[100%] after:h-[100%] after:top-0 after:left-0 after:bg-[#FF014F] after:rounded-full after:z-0 after:scale-100 group-hover:after:scale-0 after:transition-transform after:duration-300"
@@ -105,18 +128,33 @@ const Header = () => {
 									<span className="h-[2px] block bg-white w-[50%] group-hover:bg-brand relative z-30"></span>
 								</span>
 							</li>
+							{/* Small Screen Menu */}
+							<li
+								onClick={openLeftDrawer}
+								className="group lg:hidden"
+							>
+								<span className="relative w-[40px] cursor-pointer h-[40px] inline-flex flex-col items-center border-[1px] border-brand justify-center bg-transparent rounded-full z-10 after:absolute after:w-[100%] after:h-[100%] after:top-0 after:left-0 after:bg-[#FF014F] after:rounded-full after:z-0 after:scale-100 group-hover:after:scale-0 after:transition-transform after:duration-300">
+									<span className="h-[2px] block bg-white w-[50%] group-hover:bg-brand relative z-30"></span>
+									<span className="h-[2px] block bg-white w-[50%] group-hover:bg-brand my-[6px] ml-2 group-hover:ml-0 transition-all duration-300 relative z-30"></span>
+									<span className="h-[2px] block bg-white w-[50%] group-hover:bg-brand relative z-30"></span>
+								</span>
+							</li>
 						</ul>
 					</div>
 				</div>
-				{/* Menu Side Bar */}
+				{/* Large Screen Side Bar */}
 				<div className="drawer drawer-end z-40 bg-[#141414]">
 					<input
 						id="my-drawer-4"
 						type="checkbox"
 						className="drawer-toggle"
 					/>
-					<div className="drawer-side ">
-						<label className="drawer-overlay"></label>
+					<div className="drawer-side">
+						<label
+							htmlFor="my-drawer-4"
+							aria-label="close sidebar"
+							className="drawer-overlay"
+						></label>
 						<div className="relative p-0 bg-[#141414] text-base-content min-h-full w-[400px]">
 							<div className="bg-[rgba(21,21,21,0.50)]">
 								<div className="absolute top-[15px] right-[15px]">
@@ -233,6 +271,75 @@ const Header = () => {
 										</ul>
 									</div>
 								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div className="drawer z-40">
+					<input
+						id="my-drawer"
+						type="checkbox"
+						className="drawer-toggle"
+					/>
+					<div className="drawer-side">
+						<label
+							htmlFor="my-drawer"
+							aria-label="close sidebar"
+							className="drawer-overlay"
+						></label>
+						<div className="menu bg-[#141414] text-base-content min-h-full w-80 p-4">
+							<div className="flex items-center justify-between">
+								<Link
+									to="/"
+									className="inline-flex items-center gap-1"
+								>
+									<img
+										className="max-w-[30px] block"
+										src="https://i.ibb.co.com/gZDM6BLc/logocopy.png"
+										alt=""
+									/>
+									<span className="text-[25px] text-white font-rubik">
+										Rakeeb
+									</span>
+								</Link>
+								<div
+									onClick={closeLeftDrawer}
+									className="relative w-[40px] h-[40px] rounded-full bg-[#060606] cursor-pointer flex items-center justify-center after:absolute after:w-full after:h-full after:bg-brand after:top-0 after:left-0 after:rounded-full after:z-10 after:scale-0 hover:after:scale-100 after:transition-transform after:duration-500"
+								>
+									<HiOutlineXMark className="text-[28px] text-white relative z-20" />
+								</div>
+							</div>
+							<ul className="flex flex-col pt-[15px]">
+								{navItem}
+							</ul>
+							{/* Find Me */}
+							<div className="social-links mt-10">
+								<p className="text-white text-[16px] font-rajdhani font-medium uppercase mb-[15px]">
+									find with me
+								</p>
+								<ul className="flex items-center gap-x-3">
+									<li className="group">
+										<Link className="relative w-[40px] h-[40px] p-0 inline-flex items-center justify-center bg-[rgba(255,255,255,0.062745098)] rounded-full z-10 after:absolute after:w-[100%] after:h-[100%] after:top-0 after:left-0 after:bg-[#FF014F] after:rounded-full after:z-0 after:scale-0 group-hover:after:scale-100 after:transition-transform after:duration-300">
+											<FaInstagram className="text-white text-[19px] relative z-20" />
+										</Link>
+									</li>
+									<li className="group">
+										<Link className="relative w-[40px] h-[40px] p-0 inline-flex items-center justify-center bg-[rgba(255,255,255,0.062745098)] rounded-full z-10 after:absolute after:w-[100%] after:h-[100%] after:top-0 after:left-0 after:bg-[#FF014F] after:rounded-full after:z-0 after:scale-0 group-hover:after:scale-100 after:transition-transform after:duration-300">
+											<FaLinkedinIn className="text-white text-[19px] relative z-20" />
+										</Link>
+									</li>
+									<li className="group">
+										<Link className="relative w-[40px] h-[40px] p-0 inline-flex items-center justify-center bg-[rgba(255,255,255,0.062745098)] rounded-full z-10 after:absolute after:w-[100%] after:h-[100%] after:top-0 after:left-0 after:bg-[#FF014F] after:rounded-full after:z-0 after:scale-0 group-hover:after:scale-100 after:transition-transform after:duration-300">
+											<FaFacebookF className="text-white text-[19px] relative z-20" />
+										</Link>
+									</li>
+									<li className="group">
+										<Link className="relative w-[40px] h-[40px] p-0 inline-flex items-center justify-center bg-[rgba(255,255,255,0.062745098)] rounded-full z-10 after:absolute after:w-[100%] after:h-[100%] after:top-0 after:left-0 after:bg-[#FF014F] after:rounded-full after:z-0 after:scale-0 group-hover:after:scale-100 after:transition-transform after:duration-300">
+											<FaBehance className="text-white text-[19px] relative z-20" />
+										</Link>
+									</li>
+								</ul>
 							</div>
 						</div>
 					</div>
