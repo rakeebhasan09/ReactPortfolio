@@ -49,3 +49,28 @@ body {
 	background: rgba(0, 0, 0, 0.8);
 	backdrop-filter: blur(5px);
 }
+
+.custom-stroke {
+	position: relative;
+	-webkit-text-stroke: 1px #fff;
+	color: transparent;
+	animation: upsAndDown 2s infinite linear;
+}
+.keyFramAnimation {
+	position: relative;
+	animation: upsAndDown 2s infinite linear;
+}
+
+@keyframes upsAndDown {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		/* Shurur 20% te upar jabe */
+		transform: translateY(-20px);
+	}
+	100% {
+		/* Baki 80% te aste aste niche asbe */
+		transform: translateY(0);
+	}
+}

@@ -39,7 +39,7 @@ const HeroBanner = () => {
 									/>
 								</div>
 
-								<p className="text-[#9F9F9F] mt-[22px] mb-[39px] text-[18px] font-rubik max-w-[620px]">
+								<p className="text-[#9F9F9F] mt-[15px] mb-[39px] text-[18px] font-rubik max-w-[620px]">
 									A personal portfolio is a collection of your
 									work, achievements, and skills that
 									highlights your abilities and professional
@@ -55,12 +55,24 @@ const HeroBanner = () => {
 							</div>
 						</div>
 						<div className="w-1/2">
-							<div className="my-image">
+							<div className="my-image relative">
 								<img
-									className="block ml-auto"
+									className="block ml-auto z-10 relative"
 									src="https://i.ibb.co.com/9mzCC32q/banner-user-image-one.png"
 									alt="MD RAKEEB HASAN"
 								/>
+								{/* Bottom Text */}
+								<div className="absolute bottom-3 -right-7 z-10">
+									<h2 className="text-[90px] font-rajdhani font-bold custom-stroke">
+										WEB DESIGNER
+									</h2>
+								</div>
+								{/* Top Text */}
+								<div className="absolute top-48 -right-7 z-0">
+									<h2 className="text-[90px] text-white font-rajdhani font-bold keyFramAnimation">
+										WEB DESIGNER
+									</h2>
+								</div>
 							</div>
 						</div>
 					</div>
