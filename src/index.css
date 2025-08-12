@@ -66,11 +66,9 @@ body {
 		transform: translateY(0);
 	}
 	50% {
-		/* Shurur 20% te upar jabe */
 		transform: translateY(-20px);
 	}
 	100% {
-		/* Baki 80% te aste aste niche asbe */
 		transform: translateY(0);
 	}
 }

@@ -54,14 +54,6 @@ const Header = () => {
 				setScrolled(false);
 			}
 
-			if (currentScrollY < lastScrollY) {
-				setShowNavbar(true);
-			} else if (currentScrollY < 300) {
-				setShowNavbar(false);
-			} else if (currentScrollY >= 300) {
-				setShowNavbar(true);
-			}
-
 			setLastScrollY(currentScrollY);
 		};
 		window.addEventListener("scroll", handleScroll);
