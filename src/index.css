@@ -74,3 +74,9 @@ body {
 		transform: translateY(0);
 	}
 }
+
+@media screen and (max-width: 575px) {
+	.my-image.relative img {
+		width: 240px;
+	}
+}

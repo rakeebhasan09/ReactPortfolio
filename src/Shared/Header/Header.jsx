@@ -9,8 +9,11 @@ import {
 import { HiOutlineXMark } from "react-icons/hi2";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { MdMyLocation } from "react-icons/md";
+import { useEffect, useState } from "react";
 
 const Header = () => {
+	const [lastScrollY, setLastScrollY] = useState(0);
+	const [scrolled, setScrolled] = useState(false);
 	// Right Aside Bar Open
 	const openDrawer = () => {
 		const drawerCheckbox = document.getElementById("my-drawer-4");
@@ -40,6 +43,31 @@ const Header = () => {
 			drawerToggle.checked = false;
 		}
 	};
+
+	useEffect(() => {
+		const handleScroll = () => {
+			const currentScrollY = window.scrollY;
+
+			if (currentScrollY > 0) {
+				setScrolled(true);
+			} else {
+				setScrolled(false);
+			}
+
+			if (currentScrollY < lastScrollY) {
+				setShowNavbar(true);
+			} else if (currentScrollY < 300) {
+				setShowNavbar(false);
+			} else if (currentScrollY >= 300) {
+				setShowNavbar(true);
+			}
+
+			setLastScrollY(currentScrollY);
+		};
+		window.addEventListener("scroll", handleScroll);
+
+		return () => window.removeEventListener("scroll", handleScroll);
+	}, [lastScrollY]);
 
 	// Nav Items
 	const navItem = (
@@ -72,7 +100,11 @@ const Header = () => {
 		</>
 	);
 	return (
-		<header className="absolute w-full">
+		<header
+			className={`fixed w-full top-0 left-0 z-50 ${
+				scrolled ? "bg-[#141414]" : "bg-transparent"
+			}`}
+		>
 			<div className="container">
 				<div className="py-[10px] flex items-center justify-between">
 					{/* Logo Card */}

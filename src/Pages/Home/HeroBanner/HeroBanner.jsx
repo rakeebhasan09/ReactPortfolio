@@ -5,25 +5,24 @@ import TypeWriterEffect from "react-typewriter-effect";
 const HeroBanner = () => {
 	return (
 		<div>
-			<div className="bg-[url('https://i.ibb.co.com/WpHTVz9x/banner-background-one.jpg')] bg-no-repeat bg-cover bg-center lg:pt-[120px]">
+			<div className="bg-[url('https://i.ibb.co.com/WpHTVz9x/banner-background-one.jpg')] bg-no-repeat bg-cover bg-center pt-24 md:pt-[110px] lg:pt-[120px]">
 				<div className="container">
-					<div className="flex flex-col lg:flex-row items-center">
-						<div className="w-1/2">
+					<div className="flex flex-col gap-y-8 lg:flex-row items-center">
+						<div className="lg:w-1/2">
 							<div className="content">
 								<span className="text-white text-[28px] font-rajdhani font-bold uppercase">
 									hello
 								</span>
-								<h1 className="text-white lg:text-[68px] font-rajdhani font-bold">
+								<h1 className="text-white text-[40px] sm:text-[50px] md:text-[60px] lg:text-[54px] xl:text-[65px] xxl:text-[68px] font-rajdhani font-bold">
 									I'm Rakeeb Hasan a
 								</h1>
 
-								<div>
+								<div className="text-[40px] sm:text-[50px] md:text-[60px] lg:text-[45px] xl:text-[55px] xxl:text-[68px]">
 									<TypeWriterEffect
 										textStyle={{
 											fontFamily: "Rajdhani",
 											color: "#FF014F",
 											fontWeight: 700,
-											fontSize: "68px",
 										}}
 										cursorColor="#3F3D56"
 										multiText={[
@@ -39,7 +38,7 @@ const HeroBanner = () => {
 									/>
 								</div>
 
-								<p className="text-[#9F9F9F] mt-[15px] mb-[39px] text-[18px] font-rubik max-w-[620px]">
+								<p className="text-[#9F9F9F] mt-[10px] mb-[20px] lg:mt-[15px] lg:mb-[39px] text-[18px] font-rubik max-w-[620px]">
 									A personal portfolio is a collection of your
 									work, achievements, and skills that
 									highlights your abilities and professional
@@ -54,7 +53,7 @@ const HeroBanner = () => {
 								</Link>
 							</div>
 						</div>
-						<div className="w-1/2">
+						<div className="lg:w-1/2">
 							<div className="my-image relative">
 								<img
 									className="block ml-auto z-10 relative"
@@ -62,14 +61,14 @@ const HeroBanner = () => {
 									alt="MD RAKEEB HASAN"
 								/>
 								{/* Bottom Text */}
-								<div className="absolute bottom-3 -right-7 z-10">
-									<h2 className="text-[90px] font-rajdhani font-bold custom-stroke">
+								<div className="absolute bottom-0 sm:bottom-2 md:bottom-3 left-2/4 -translate-x-2/4 xl:left-3/4 xl:-translate-x-3/4 xxl:left-auto xxl:-translate-x-0 xxl:-right-7 z-10">
+									<h2 className="text-[45px] sm:text-[70px] whitespace-nowrap md:text-[80px] lg:text-[70px] xl:text-[80px] xxl:text-[90px] font-rajdhani font-bold custom-stroke">
 										WEB DESIGNER
 									</h2>
 								</div>
 								{/* Top Text */}
-								<div className="absolute top-48 -right-7 z-0">
-									<h2 className="text-[90px] text-white font-rajdhani font-bold keyFramAnimation">
+								<div className="absolute top-24 sm:top-48 md:top-48 left-2/4 -translate-x-2/4 xl:left-3/4 xl:-translate-x-3/4 xxl:left-auto xxl:-translate-x-0 xxl:-right-7 z-0">
+									<h2 className="text-[45px] sm:text-[70px] whitespace-nowrap md:text-[80px] lg:text-[70px] xl:text-[80px] xxl:text-[90px] text-white font-rajdhani font-bold keyFramAnimation">
 										WEB DESIGNER
 									</h2>
 								</div>
