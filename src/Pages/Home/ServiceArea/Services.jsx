@@ -9,11 +9,14 @@ const Services = () => {
 			.then((data) => setServices(data));
 	}, []);
 	return (
-		<div className="xxl:py-[120px]">
+		<div className="py-12 md:py-[70px] lg:py-[100px] xxl:py-[120px]">
 			<div className="container">
-				<div className="grid grid-cols-4 gap-x-[30px]">
+				<div className="grid gap-y-4 sm:grid-cols-2 md:grid-cols-2 md:gap-y-5 lg:grid-cols-4 gap-x-[30px]">
 					{services.map((service) => (
-						<ServiceCard key={service._id}></ServiceCard>
+						<ServiceCard
+							key={service._id}
+							service={service}
+						></ServiceCard>
 					))}
 				</div>
 			</div>
