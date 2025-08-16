@@ -115,7 +115,9 @@ const Header = () => {
 
 					{/* Menu Items */}
 					<nav className="hidden lg:block">
-						<ul className="flex items-center gap-x-3">{navItem}</ul>
+						<ul className="flex items-center gap-x-3 desktop-menu">
+							{navItem}
+						</ul>
 					</nav>
 
 					{/* Social Links */}
