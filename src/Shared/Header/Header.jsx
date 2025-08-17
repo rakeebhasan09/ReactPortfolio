@@ -65,27 +65,42 @@ const Header = () => {
 	const navItem = (
 		<>
 			<li className="group border-t-[1px] border-t-[#262626] lg:border-none">
-				<NavLink className="py-2 px-0 lg:px-3 text-[#9F9F9F] font-rubik font-medium lg:text-white lg:font-rajdhani lg:font-black uppercase lg:capitalize rounded group-hover:bg-[#270D15] group-hover:text-[#FF014F] transition-all duration-200">
+				<NavLink
+					to={"/"}
+					className="py-2 px-0 lg:px-3 text-[#9F9F9F] font-rubik font-medium lg:text-white lg:font-rajdhani lg:font-black uppercase lg:capitalize rounded group-hover:bg-[#270D15] group-hover:text-[#FF014F] transition-all duration-200"
+				>
 					home
 				</NavLink>
 			</li>
 			<li className="group border-t-[1px] border-t-[#262626] lg:border-none">
-				<NavLink className="py-2 px-0 lg:px-3 text-[#9F9F9F] font-rubik font-medium uppercase lg:text-white lg:font-rajdhani lg:font-black lg:capitalize group-hover:bg-[#270D15] group-hover:text-[#FF014F] transition-all duration-200">
+				<NavLink
+					to={"/about"}
+					className="py-2 px-0 lg:px-3 text-[#9F9F9F] font-rubik font-medium uppercase lg:text-white lg:font-rajdhani lg:font-black lg:capitalize group-hover:bg-[#270D15] group-hover:text-[#FF014F] transition-all duration-200"
+				>
 					about
 				</NavLink>
 			</li>
 			<li className="group border-t-[1px] border-t-[#262626] lg:border-none">
-				<NavLink className="py-2 px-0 lg:px-3 text-[#9F9F9F] font-rubik font-medium uppercase lg:text-white lg:font-rajdhani lg:font-black lg:capitalize group-hover:bg-[#270D15] group-hover:text-[#FF014F] transition-all duration-200">
+				<NavLink
+					to={"/services"}
+					className="py-2 px-0 lg:px-3 text-[#9F9F9F] font-rubik font-medium uppercase lg:text-white lg:font-rajdhani lg:font-black lg:capitalize group-hover:bg-[#270D15] group-hover:text-[#FF014F] transition-all duration-200"
+				>
 					services
 				</NavLink>
 			</li>
 			<li className="group border-t-[1px] border-t-[#262626] lg:border-none">
-				<NavLink className="py-2 px-0 lg:px-3 text-[#9F9F9F] font-rubik font-medium uppercase lg:text-white lg:font-rajdhani lg:font-black lg:capitalize group-hover:bg-[#270D15] group-hover:text-[#FF014F] transition-all duration-200">
+				<NavLink
+					to={"/projects"}
+					className="py-2 px-0 lg:px-3 text-[#9F9F9F] font-rubik font-medium uppercase lg:text-white lg:font-rajdhani lg:font-black lg:capitalize group-hover:bg-[#270D15] group-hover:text-[#FF014F] transition-all duration-200"
+				>
 					projects
 				</NavLink>
 			</li>
 			<li className="group border-t-[1px] border-t-[#262626] lg:border-none">
-				<NavLink className="py-2 px-0 lg:px-3 text-[#9F9F9F] font-rubik font-medium uppercase lg:text-white lg:font-rajdhani lg:font-black lg:capitalize group-hover:bg-[#270D15] group-hover:text-[#FF014F] transition-all duration-200">
+				<NavLink
+					to={"/contact"}
+					className="py-2 px-0 lg:px-3 text-[#9F9F9F] font-rubik font-medium uppercase lg:text-white lg:font-rajdhani lg:font-black lg:capitalize group-hover:bg-[#270D15] group-hover:text-[#FF014F] transition-all duration-200"
+				>
 					contact
 				</NavLink>
 			</li>
