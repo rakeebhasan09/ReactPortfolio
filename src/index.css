@@ -7,7 +7,7 @@
 @layer components {
 	.card {
 		--start: 0;
-		@apply relative bg-[#040404] rounded-[14px] transition-colors duration-300;
+		@apply relative transition-colors duration-300;
 	}
 
 	.card::before {
