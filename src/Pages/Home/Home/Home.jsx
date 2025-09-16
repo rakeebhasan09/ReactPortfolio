@@ -1,4 +1,5 @@
 import Counter from "../CounterArea/Counter";
+import Education from "../Education/Education";
 import HeroBanner from "../HeroBanner/HeroBanner";
 import LatestServices from "../LatestServices/LatestServices";
 import Services from "../ServiceArea/Services";
@@ -12,6 +13,7 @@ const Home = () => {
 			<Counter></Counter>
 			<SkillsArea></SkillsArea>
 			<LatestServices></LatestServices>
+			<Education></Education>
 		</div>
 	);
 };
