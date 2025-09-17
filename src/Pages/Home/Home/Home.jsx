@@ -5,6 +5,7 @@ import HeroBanner from "../HeroBanner/HeroBanner";
 import LatestServices from "../LatestServices/LatestServices";
 import Services from "../ServiceArea/Services";
 import SkillsArea from "../SkillsArea/SkillsArea";
+import Technology from "../Technology/Technology";
 
 const Home = () => {
 	return (
@@ -16,6 +17,7 @@ const Home = () => {
 			<LatestServices></LatestServices>
 			<Education></Education>
 			<Experiences></Experiences>
+			<Technology></Technology>
 		</div>
 	);
 };
