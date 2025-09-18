@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import MainLayout from "./MainLayout/MainLayout";
 import Home from "./Pages/Home/Home/Home";
 import { ToastContainer } from "react-toastify";
+import About from "./Pages/About/About/About";
 const router = createBrowserRouter([
 	{
 		path: "/",
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
 			{
 				path: "/",
 				element: <Home></Home>,
+			},
+			{
+				path: "about",
+				element: <About></About>,
 			},
 		],
 	},

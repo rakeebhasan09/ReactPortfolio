@@ -3,7 +3,7 @@ import SkillBar from "./SkillBar";
 
 const SkillsArea = () => {
 	return (
-		<div className="py-12 md:py-20 lg:py-[120px]">
+		<div className="skills-area py-12 md:py-20 lg:py-[120px]">
 			<div className="container">
 				<div className="flex flex-col lg:flex-row gap-[30px]">
 					<div className="w-full lg:w-1/2">

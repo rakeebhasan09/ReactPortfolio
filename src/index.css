@@ -75,6 +75,10 @@ body {
 	margin-left: auto;
 }
 
+#about-page-skills .skills-area {
+	padding-top: 0 !important;
+}
+
 @media (min-width: 576px) {
 	.container {
 		max-width: 540px;
