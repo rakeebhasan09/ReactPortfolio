@@ -9,7 +9,7 @@ const RecentProjects = () => {
 			.then((projectsData) => setProjects(projectsData));
 	}, []);
 	return (
-		<section>
+		<section className="pb-0 md:pb-16 lg:pb-[100px]">
 			<div className="container mx-auto">
 				<h2 className="text-white text-center text-[28px] md:text-[32px] font-rajdhani font-bold">
 					Recent Project's
