@@ -78,7 +78,7 @@ export default function Gallery() {
 									{img.name}
 								</Link>
 								<span className="text-brand leading-[100%] font-rubik font-medium">
-									React.js TailwindCSS
+									{img.technology}
 								</span>
 							</div>
 							<button

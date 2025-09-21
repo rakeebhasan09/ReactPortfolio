@@ -141,6 +141,10 @@ body {
 	font-size: 23px;
 }
 
+.yarl__slide {
+	padding: 0 !important;
+}
+
 @keyframes upsAndDown {
 	0% {
 		transform: translateY(0);
