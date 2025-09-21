@@ -8,6 +8,7 @@ import About from "./Pages/About/About/About";
 import Project from "./Pages/Project/Project/Project";
 import { ToastContainer } from "react-toastify";
 import "./index.css";
+import Contact from "./Pages/Contact/Contact/Contact";
 
 const router = createBrowserRouter([
 	{
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
 			{
 				path: "projects",
 				element: <Project></Project>,
+			},
+			{
+				path: "contact",
+				element: <Contact></Contact>,
 			},
 		],
 	},
