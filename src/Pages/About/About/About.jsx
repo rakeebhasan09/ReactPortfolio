@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import Counter from "../../Home/CounterArea/Counter";
 import Education from "../../Home/Education/Education";
 import Experiences from "../../Home/Experiencs/Experiences";
@@ -9,6 +10,9 @@ import Testimonials from "../Testimonial/Testimonials";
 const About = () => {
 	return (
 		<main>
+			<Helmet>
+				<title>Rakeeb Hasan || About</title>
+			</Helmet>
 			<section>
 				<AboutBanner></AboutBanner>
 			</section>

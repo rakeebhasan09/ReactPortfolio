@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import Counter from "../CounterArea/Counter";
 import Education from "../Education/Education";
 import Experiences from "../Experiencs/Experiences";
@@ -11,6 +12,9 @@ import Technology from "../Technology/Technology";
 const Home = () => {
 	return (
 		<div>
+			<Helmet>
+				<title>Rakee Hasan || Front End Developer</title>
+			</Helmet>
 			<HeroBanner></HeroBanner>
 			<Services></Services>
 			<Counter></Counter>

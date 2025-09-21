@@ -121,6 +121,26 @@ body {
 	animation: upsAndDown 2s infinite linear;
 }
 
+/* global.css বা App.css এ দাও */
+.yarl__backdrop,
+.yarl__container {
+	background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.yarl__slide_captions_container.yarl__slide_title_container {
+	position: absolute;
+	left: 50%;
+	bottom: 40px;
+	transform: translateX(-50%);
+}
+
+.yarl__slide_title {
+	text-transform: capitalize;
+	color: #ff014f;
+	font-weight: 600;
+	font-size: 23px;
+}
+
 @keyframes upsAndDown {
 	0% {
 		transform: translateY(0);
