@@ -9,6 +9,7 @@ import Project from "./Pages/Project/Project/Project";
 import { ToastContainer } from "react-toastify";
 import "./index.css";
 import Contact from "./Pages/Contact/Contact/Contact";
+import Service from "./Pages/Service/Service/Service";
 
 const router = createBrowserRouter([
 	{
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
 			{
 				path: "about",
 				element: <About></About>,
+			},
+			{
+				path: "services",
+				element: <Service></Service>,
 			},
 			{
 				path: "projects",
