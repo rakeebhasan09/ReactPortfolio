@@ -139,22 +139,44 @@ const Header = () => {
 					<div className="social-links">
 						<ul className="flex items-center gap-x-3">
 							<li className="group hidden md:block">
-								<Link className="relative w-[40px] h-[40px] inline-flex items-center justify-center bg-[rgba(255,255,255,0.062745098)] rounded-full z-10 after:absolute after:w-[100%] after:h-[100%] after:top-0 after:left-0 after:bg-[#FF014F] after:rounded-full after:z-0 after:scale-0 group-hover:after:scale-100 after:transition-transform after:duration-300">
+								<Link
+									to={
+										"https://www.instagram.com/rakeebhasan09/"
+									}
+									target="_blank"
+									className="relative w-[40px] h-[40px] inline-flex items-center justify-center bg-[rgba(255,255,255,0.062745098)] rounded-full z-10 after:absolute after:w-[100%] after:h-[100%] after:top-0 after:left-0 after:bg-[#FF014F] after:rounded-full after:z-0 after:scale-0 group-hover:after:scale-100 after:transition-transform after:duration-300"
+								>
 									<FaInstagram className="text-white text-[18px] relative z-20" />
 								</Link>
 							</li>
 							<li className="group hidden md:block">
-								<Link className="relative w-[40px] h-[40px] inline-flex items-center justify-center bg-[rgba(255,255,255,0.062745098)] rounded-full z-10 after:absolute after:w-[100%] after:h-[100%] after:top-0 after:left-0 after:bg-[#FF014F] after:rounded-full after:z-0 after:scale-0 group-hover:after:scale-100 after:transition-transform after:duration-300">
+								<Link
+									to={
+										"https://www.linkedin.com/in/rakeebhasan09/"
+									}
+									target="_blank"
+									className="relative w-[40px] h-[40px] inline-flex items-center justify-center bg-[rgba(255,255,255,0.062745098)] rounded-full z-10 after:absolute after:w-[100%] after:h-[100%] after:top-0 after:left-0 after:bg-[#FF014F] after:rounded-full after:z-0 after:scale-0 group-hover:after:scale-100 after:transition-transform after:duration-300"
+								>
 									<FaLinkedinIn className="text-white text-[18px] relative z-20" />
 								</Link>
 							</li>
 							<li className="group hidden md:block">
-								<Link className="relative w-[40px] h-[40px] inline-flex items-center justify-center bg-[rgba(255,255,255,0.062745098)] rounded-full z-10 after:absolute after:w-[100%] after:h-[100%] after:top-0 after:left-0 after:bg-[#FF014F] after:rounded-full after:z-0 after:scale-0 group-hover:after:scale-100 after:transition-transform after:duration-300">
+								<Link
+									to={
+										"https://www.facebook.com/rakeebhasan09"
+									}
+									target="_blank"
+									className="relative w-[40px] h-[40px] inline-flex items-center justify-center bg-[rgba(255,255,255,0.062745098)] rounded-full z-10 after:absolute after:w-[100%] after:h-[100%] after:top-0 after:left-0 after:bg-[#FF014F] after:rounded-full after:z-0 after:scale-0 group-hover:after:scale-100 after:transition-transform after:duration-300"
+								>
 									<FaFacebookF className="text-white text-[18px] relative z-20" />
 								</Link>
 							</li>
 							<li className="group hidden md:block">
-								<Link className="relative w-[40px] h-[40px] inline-flex items-center justify-center bg-[rgba(255,255,255,0.062745098)] rounded-full z-10 after:absolute after:w-[100%] after:h-[100%] after:top-0 after:left-0 after:bg-[#FF014F] after:rounded-full after:z-0 after:scale-0 group-hover:after:scale-100 after:transition-transform after:duration-300">
+								<Link
+									to={"https://www.behance.net/rakeebhasan09"}
+									target="_blank"
+									className="relative w-[40px] h-[40px] inline-flex items-center justify-center bg-[rgba(255,255,255,0.062745098)] rounded-full z-10 after:absolute after:w-[100%] after:h-[100%] after:top-0 after:left-0 after:bg-[#FF014F] after:rounded-full after:z-0 after:scale-0 group-hover:after:scale-100 after:transition-transform after:duration-300"
+								>
 									<FaBehance className="text-white text-[18px] relative z-20" />
 								</Link>
 							</li>
@@ -229,12 +251,12 @@ const Header = () => {
 									/>
 									<h5 className="text-white text-[20px] font-rubik font-bold mt-[30px] mb-5">
 										Freelancer delivering exceptional
-										Webflow, and Next.js solutions.
+										Front-End, and MERN Stack solutions.
 									</h5>
 									<p className="text-[#9F9F9F] font-rubik mb-10">
 										I am a skilled freelancer specializing
-										in Webflow development, Figma design,
-										and Next.js projects. I deliver
+										in Front-End development, Figma design
+										into MERN Stack projects. I deliver
 										creative, dynamic, and user-centric web
 										solutions.
 									</p>
@@ -249,7 +271,7 @@ const Header = () => {
 													call now
 												</span>
 												<Link className="text-white font-rubik relative after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[3px] after:bg-white after:hover:w-full after:transition-all after:duration-500">
-													+92 (8800) - 98670
+													+8801701028688
 												</Link>
 											</div>
 										</div>
@@ -260,10 +282,10 @@ const Header = () => {
 											</div>
 											<div className="flex flex-col">
 												<span className="text-brand text-[15px] font-bold uppercase">
-													Mail Us
+													Mail Me
 												</span>
 												<Link className="text-white font-rubik relative after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[3px] after:bg-white after:hover:w-full after:transition-all after:duration-500">
-													example@info.com
+													rakeebhasan1@gmail.com
 												</Link>
 											</div>
 										</div>
@@ -276,8 +298,9 @@ const Header = () => {
 												<span className="text-brand text-[15px] font-bold uppercase">
 													My Address
 												</span>
-												<Link className="text-white font-rubik uppercase">
-													66 Broklyant, New York 3269
+												<Link className="text-white text-[14px] font-rubik uppercase">
+													Sherpur, Mymensingh,
+													Bangladesh
 												</Link>
 											</div>
 										</div>
@@ -290,22 +313,46 @@ const Header = () => {
 										</p>
 										<ul className="flex items-center gap-x-3">
 											<li className="group">
-												<Link className="relative w-[40px] h-[40px] inline-flex items-center justify-center bg-[rgba(255,255,255,0.062745098)] rounded-full z-10 after:absolute after:w-[100%] after:h-[100%] after:top-0 after:left-0 after:bg-[#FF014F] after:rounded-full after:z-0 after:scale-0 group-hover:after:scale-100 after:transition-transform after:duration-300">
+												<Link
+													to={
+														"https://www.instagram.com/rakeebhasan09/"
+													}
+													target="_blank"
+													className="relative w-[40px] h-[40px] inline-flex items-center justify-center bg-[rgba(255,255,255,0.062745098)] rounded-full z-10 after:absolute after:w-[100%] after:h-[100%] after:top-0 after:left-0 after:bg-[#FF014F] after:rounded-full after:z-0 after:scale-0 group-hover:after:scale-100 after:transition-transform after:duration-300"
+												>
 													<FaInstagram className="text-white text-[18px] relative z-20" />
 												</Link>
 											</li>
 											<li className="group">
-												<Link className="relative w-[40px] h-[40px] inline-flex items-center justify-center bg-[rgba(255,255,255,0.062745098)] rounded-full z-10 after:absolute after:w-[100%] after:h-[100%] after:top-0 after:left-0 after:bg-[#FF014F] after:rounded-full after:z-0 after:scale-0 group-hover:after:scale-100 after:transition-transform after:duration-300">
+												<Link
+													to={
+														"https://www.linkedin.com/in/rakeebhasan09/"
+													}
+													target="_blank"
+													className="relative w-[40px] h-[40px] inline-flex items-center justify-center bg-[rgba(255,255,255,0.062745098)] rounded-full z-10 after:absolute after:w-[100%] after:h-[100%] after:top-0 after:left-0 after:bg-[#FF014F] after:rounded-full after:z-0 after:scale-0 group-hover:after:scale-100 after:transition-transform after:duration-300"
+												>
 													<FaLinkedinIn className="text-white text-[18px] relative z-20" />
 												</Link>
 											</li>
 											<li className="group">
-												<Link className="relative w-[40px] h-[40px] inline-flex items-center justify-center bg-[rgba(255,255,255,0.062745098)] rounded-full z-10 after:absolute after:w-[100%] after:h-[100%] after:top-0 after:left-0 after:bg-[#FF014F] after:rounded-full after:z-0 after:scale-0 group-hover:after:scale-100 after:transition-transform after:duration-300">
+												<Link
+													to={
+														"https://www.facebook.com/rakeebhasan09"
+													}
+													target="_blank"
+													className="relative w-[40px] h-[40px] inline-flex items-center justify-center bg-[rgba(255,255,255,0.062745098)] rounded-full z-10 after:absolute after:w-[100%] after:h-[100%] after:top-0 after:left-0 after:bg-[#FF014F] after:rounded-full after:z-0 after:scale-0 group-hover:after:scale-100 after:transition-transform after:duration-300"
+												>
 													<FaFacebookF className="text-white text-[18px] relative z-20" />
 												</Link>
 											</li>
 											<li className="group">
-												<Link className="relative w-[40px] h-[40px] inline-flex items-center justify-center bg-[rgba(255,255,255,0.062745098)] rounded-full z-10 after:absolute after:w-[100%] after:h-[100%] after:top-0 after:left-0 after:bg-[#FF014F] after:rounded-full after:z-0 after:scale-0 group-hover:after:scale-100 after:transition-transform after:duration-300">
+												<Link
+													to={
+														"https://www.behance.net/rakeebhasan09"
+													}
+													target="_blank"
+													className="relative w-[40px] h-[40px] inline-flex items-center justify-center bg-[rgba(255,255,255,0.062745098)] rounded-full z-10 after:absolute after:w-[100%] after:h-[100%] after:top-0 after:left-0 after:bg-[#FF014F] after:rounded-full after:z-0 after:scale-0 group-hover:after:scale-100 after:transition-transform after:duration-300"
+												>
 													<FaBehance className="text-white text-[18px] relative z-20" />
 												</Link>
 											</li>
@@ -317,6 +364,7 @@ const Header = () => {
 					</div>
 				</div>
 
+				{/* Small Screen Menu Bar */}
 				<div className="drawer z-40">
 					<input
 						id="my-drawer"
@@ -361,22 +409,46 @@ const Header = () => {
 								</p>
 								<ul className="flex items-center gap-x-3">
 									<li className="group">
-										<Link className="relative w-[40px] h-[40px] p-0 inline-flex items-center justify-center bg-[rgba(255,255,255,0.062745098)] rounded-full z-10 after:absolute after:w-[100%] after:h-[100%] after:top-0 after:left-0 after:bg-[#FF014F] after:rounded-full after:z-0 after:scale-0 group-hover:after:scale-100 after:transition-transform after:duration-300">
+										<Link
+											to={
+												"https://www.instagram.com/rakeebhasan09/"
+											}
+											target="_blank"
+											className="relative w-[40px] h-[40px] p-0 inline-flex items-center justify-center bg-[rgba(255,255,255,0.062745098)] rounded-full z-10 after:absolute after:w-[100%] after:h-[100%] after:top-0 after:left-0 after:bg-[#FF014F] after:rounded-full after:z-0 after:scale-0 group-hover:after:scale-100 after:transition-transform after:duration-300"
+										>
 											<FaInstagram className="text-white text-[19px] relative z-20" />
 										</Link>
 									</li>
 									<li className="group">
-										<Link className="relative w-[40px] h-[40px] p-0 inline-flex items-center justify-center bg-[rgba(255,255,255,0.062745098)] rounded-full z-10 after:absolute after:w-[100%] after:h-[100%] after:top-0 after:left-0 after:bg-[#FF014F] after:rounded-full after:z-0 after:scale-0 group-hover:after:scale-100 after:transition-transform after:duration-300">
+										<Link
+											to={
+												"https://www.linkedin.com/in/rakeebhasan09/"
+											}
+											target="_blank"
+											className="relative w-[40px] h-[40px] p-0 inline-flex items-center justify-center bg-[rgba(255,255,255,0.062745098)] rounded-full z-10 after:absolute after:w-[100%] after:h-[100%] after:top-0 after:left-0 after:bg-[#FF014F] after:rounded-full after:z-0 after:scale-0 group-hover:after:scale-100 after:transition-transform after:duration-300"
+										>
 											<FaLinkedinIn className="text-white text-[19px] relative z-20" />
 										</Link>
 									</li>
 									<li className="group">
-										<Link className="relative w-[40px] h-[40px] p-0 inline-flex items-center justify-center bg-[rgba(255,255,255,0.062745098)] rounded-full z-10 after:absolute after:w-[100%] after:h-[100%] after:top-0 after:left-0 after:bg-[#FF014F] after:rounded-full after:z-0 after:scale-0 group-hover:after:scale-100 after:transition-transform after:duration-300">
+										<Link
+											to={
+												"https://www.facebook.com/rakeebhasan09"
+											}
+											target="_blank"
+											className="relative w-[40px] h-[40px] p-0 inline-flex items-center justify-center bg-[rgba(255,255,255,0.062745098)] rounded-full z-10 after:absolute after:w-[100%] after:h-[100%] after:top-0 after:left-0 after:bg-[#FF014F] after:rounded-full after:z-0 after:scale-0 group-hover:after:scale-100 after:transition-transform after:duration-300"
+										>
 											<FaFacebookF className="text-white text-[19px] relative z-20" />
 										</Link>
 									</li>
 									<li className="group">
-										<Link className="relative w-[40px] h-[40px] p-0 inline-flex items-center justify-center bg-[rgba(255,255,255,0.062745098)] rounded-full z-10 after:absolute after:w-[100%] after:h-[100%] after:top-0 after:left-0 after:bg-[#FF014F] after:rounded-full after:z-0 after:scale-0 group-hover:after:scale-100 after:transition-transform after:duration-300">
+										<Link
+											to={
+												"https://www.behance.net/rakeebhasan09"
+											}
+											target="_blank"
+											className="relative w-[40px] h-[40px] p-0 inline-flex items-center justify-center bg-[rgba(255,255,255,0.062745098)] rounded-full z-10 after:absolute after:w-[100%] after:h-[100%] after:top-0 after:left-0 after:bg-[#FF014F] after:rounded-full after:z-0 after:scale-0 group-hover:after:scale-100 after:transition-transform after:duration-300"
+										>
 											<FaBehance className="text-white text-[19px] relative z-20" />
 										</Link>
 									</li>

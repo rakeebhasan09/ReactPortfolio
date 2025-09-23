@@ -38,18 +38,27 @@ const HeroBanner = () => {
 								</div>
 
 								<p className="text-[#9F9F9F] mt-[10px] mb-[20px] lg:mt-[15px] lg:mb-[39px] text-[18px] font-rubik max-w-[620px]">
-									A personal portfolio is a collection of your
-									work, achievements, and skills that
-									highlights your abilities and professional
-									growth. It serves as
+									Building sleek, modern, and user-friendly
+									web applications with passion and precision.
+									Passionate about design, obsessed with
+									performance, and focused on results.
 								</p>
-								<Link>
-									<button className="group px-[30px] h-14 flex items-center gap-1 text-white text-[16px] bg-brand font-rubik font-medium capitalize rounded-[50px]">
-										<GoArrowRight className="text-[20px] hidden group-hover:inline-block transition-all duration-300 transform group-hover:translate-x-0 group-hover:opacity-100" />
-										<span>View Portfolio</span>
-										<GoArrowRight className="text-[20px] group-hover:hidden transition-all duration-300 transform group-hover:translate-x-2 group-hover:opacity-0" />
-									</button>
-								</Link>
+								<div className="flex flex-col md:flex-row items-center gap-4">
+									<Link to={"/projects"}>
+										<button className="group px-[30px] h-14 flex items-center gap-1 text-white text-[16px] bg-brand font-rubik font-medium capitalize rounded-[50px]">
+											<GoArrowRight className="text-[20px] hidden group-hover:inline-block transition-all duration-300 transform group-hover:translate-x-0 group-hover:opacity-100" />
+											<span>View Portfolio</span>
+											<GoArrowRight className="text-[20px] group-hover:hidden transition-all duration-300 transform group-hover:translate-x-2 group-hover:opacity-0" />
+										</button>
+									</Link>
+									<a
+										href="/updated-designer-cv.pdf"
+										download={"/updated-designer-cv.pdf"}
+										className="group px-[30px] h-14 flex items-center gap-1 text-white text-[16px] border border-brand font-rubik font-medium capitalize rounded-[50px]"
+									>
+										Download CV
+									</a>
+								</div>
 							</div>
 						</div>
 						<div className="w-full lg:w-1/2">
