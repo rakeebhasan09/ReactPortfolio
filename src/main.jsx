@@ -10,6 +10,7 @@ import { ToastContainer } from "react-toastify";
 import "./index.css";
 import Contact from "./Pages/Contact/Contact/Contact";
 import Service from "./Pages/Service/Service/Service";
+import AdminLogin from "./Pages/AdminLogin/AdminLogin";
 
 const router = createBrowserRouter([
 	{
@@ -37,6 +38,11 @@ const router = createBrowserRouter([
 				element: <Contact></Contact>,
 			},
 		],
+	},
+
+	{
+		path: "/admin",
+		element: <AdminLogin></AdminLogin>,
 	},
 ]);
 
