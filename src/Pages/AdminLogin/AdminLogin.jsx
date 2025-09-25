@@ -2,10 +2,12 @@ import { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { BsFillEyeFill, BsFillEyeSlashFill } from "react-icons/bs";
 import { FaLock, FaUser } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
 const AdminLogin = () => {
 	const [showPassword, setShowPassword] = useState(false);
+	const navigate = useNavigate();
 	const handleShowPassword = () => {
 		setShowPassword(!showPassword);
 	};
@@ -18,6 +20,11 @@ const AdminLogin = () => {
 		const userName = event.target.username.value;
 		const userPass = event.target.userpassword.value;
 
+		if (userName === "" || userPass === "") {
+			toast.warn("Write your username & password!");
+			return;
+		}
+
 		if (userNameInDB !== userName) {
 			toast.warn("User Not Found!");
 			return;
@@ -29,6 +36,7 @@ const AdminLogin = () => {
 		}
 		toast.success("Log In Successfull.");
 		event.target.reset();
+		navigate("/dashboard");
 	};
 	return (
 		<>

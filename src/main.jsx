@@ -7,10 +7,11 @@ import Home from "./Pages/Home/Home/Home";
 import About from "./Pages/About/About/About";
 import Project from "./Pages/Project/Project/Project";
 import { ToastContainer } from "react-toastify";
-import "./index.css";
 import Contact from "./Pages/Contact/Contact/Contact";
 import Service from "./Pages/Service/Service/Service";
 import AdminLogin from "./Pages/AdminLogin/AdminLogin";
+import DashboardLayout from "./Pages/Dashboard/DashboardLayout/DashboardLayout";
+import "./index.css";
 
 const router = createBrowserRouter([
 	{
@@ -43,6 +44,11 @@ const router = createBrowserRouter([
 	{
 		path: "/admin",
 		element: <AdminLogin></AdminLogin>,
+	},
+
+	{
+		path: "/dashboard",
+		element: <DashboardLayout></DashboardLayout>,
 	},
 ]);
 
