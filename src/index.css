@@ -145,6 +145,11 @@ body {
 	padding: 0 !important;
 }
 
+.aside-menu-items ul li .active {
+	color: #ffffff;
+	background: #ff014f;
+}
+
 @keyframes upsAndDown {
 	0% {
 		transform: translateY(0);
