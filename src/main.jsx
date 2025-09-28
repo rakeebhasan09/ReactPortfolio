@@ -20,6 +20,10 @@ import RecentProjects from "./Pages/Dashboard/RecentProjects/RecentProjects";
 import DashboardContact from "./Pages/Dashboard/DashboardContact/DashboardContact";
 import AddToolkit from "./Pages/Dashboard/AddToolkit/AddToolkit";
 import EditToolkit from "./Pages/Dashboard/EditToolkit/EditToolkit";
+import AddPortfolio from "./Pages/Dashboard/AddPortfolio/AddPortfolio";
+import EditPortfolio from "./Pages/Dashboard/EditPortfolio/EditPortfolio";
+import AddRecentProject from "./Pages/Dashboard/AddRecentProject/AddRecentProject";
+import EditRecentProject from "./Pages/Dashboard/EditRecentProject/EditRecentProject";
 
 const router = createBrowserRouter([
 	{
@@ -87,8 +91,24 @@ const router = createBrowserRouter([
 				element: <AddToolkit />,
 			},
 			{
+				path: "add-new-portfolio",
+				element: <AddPortfolio />,
+			},
+			{
+				path: "add-recent-project",
+				element: <AddRecentProject />,
+			},
+			{
 				path: "edit-toolkit",
 				element: <EditToolkit />,
+			},
+			{
+				path: "edit-portfolio",
+				element: <EditPortfolio />,
+			},
+			{
+				path: "edit-recent-project",
+				element: <EditRecentProject />,
 			},
 		],
 	},

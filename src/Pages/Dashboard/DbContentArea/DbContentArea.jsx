@@ -3,8 +3,8 @@ import DbNavbar from "../DdNavbar/DbNavbar";
 
 const DbContentArea = ({ openSideBar }) => {
 	return (
-		<div className="w-full lg:w-[calc(100%-300px)] ml-auto relative">
-			<div className="sticky top-0 z-10 bg-white">
+		<div className="w-full lg:w-[calc(100%-300px)] ml-auto ">
+			<div className="relative bg-white">
 				<DbNavbar openSideBar={openSideBar}></DbNavbar>
 				<Outlet></Outlet>
 			</div>

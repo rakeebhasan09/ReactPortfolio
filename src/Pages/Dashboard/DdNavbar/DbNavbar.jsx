@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const DbNavbar = ({ openSideBar }) => {
 	return (
-		<div className="">
+		<div className="sticky top-0 z-10 bg-white">
 			<div className="navbar justify-between bg-base-100 min-h-0 py-2 px-4 shadow-sm">
 				<div onClick={openSideBar} className="">
 					<div className="hamburger-icon flex flex-col gap-2 cursor-pointer mr-2 lg:hidden">
