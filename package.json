@@ -24,6 +24,7 @@
 		"react-typewriter-effect": "^1.1.0",
 		"slick-carousel": "^1.8.1",
 		"sort-by": "^1.2.0",
+		"sweetalert2": "^11.23.0",
 		"swiper": "^12.0.1",
 		"yet-another-react-lightbox": "^3.25.0"
 	},

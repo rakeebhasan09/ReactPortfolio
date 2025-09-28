@@ -10,9 +10,6 @@ const DashboardLayout = () => {
 	};
 	return (
 		<>
-			<Helmet>
-				<title>Rakeeb Hasan || Admin Dashboard</title>
-			</Helmet>
 			<div className="min-h-screen bg-white flex relative">
 				<AsideBar
 					mobileSideBar={mobileSideBar}

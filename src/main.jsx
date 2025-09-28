@@ -18,6 +18,8 @@ import MyToolkit from "./Pages/Dashboard/MyToolkit/MyToolkit";
 import MyPortfolio from "./Pages/Dashboard/MyPortfolio/MyPortfolio";
 import RecentProjects from "./Pages/Dashboard/RecentProjects/RecentProjects";
 import DashboardContact from "./Pages/Dashboard/DashboardContact/DashboardContact";
+import AddToolkit from "./Pages/Dashboard/AddToolkit/AddToolkit";
+import EditToolkit from "./Pages/Dashboard/EditToolkit/EditToolkit";
 
 const router = createBrowserRouter([
 	{
@@ -79,6 +81,14 @@ const router = createBrowserRouter([
 			{
 				path: "contact",
 				element: <DashboardContact></DashboardContact>,
+			},
+			{
+				path: "add-new-toolkit",
+				element: <AddToolkit />,
+			},
+			{
+				path: "edit-toolkit",
+				element: <EditToolkit />,
 			},
 		],
 	},
