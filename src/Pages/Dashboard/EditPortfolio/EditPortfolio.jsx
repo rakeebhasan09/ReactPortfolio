@@ -54,6 +54,7 @@ const EditPortfolio = () => {
 							</label>
 							<input
 								type="text"
+								defaultValue={"Project Name"}
 								name="projectName"
 								placeholder="Write Project Name"
 								className="outline-none rounded-md w-full bg-[#F8F9FA] py-3 px-5 text-black"
@@ -65,6 +66,7 @@ const EditPortfolio = () => {
 							</label>
 							<input
 								type="text"
+								defaultValue={"Live URL"}
 								name="liveUrl"
 								placeholder="Paste Live URL"
 								className="outline-none rounded-md w-full bg-[#F8F9FA] py-3 px-5 text-black"
@@ -76,6 +78,7 @@ const EditPortfolio = () => {
 							</label>
 							<input
 								type="text"
+								defaultValue={"React.js TailwindCSS"}
 								name="technologies"
 								placeholder="Write Uses Technologies"
 								className="outline-none rounded-md w-full bg-[#F8F9FA] py-3 px-5 text-black"
@@ -88,6 +91,7 @@ const EditPortfolio = () => {
 							</label>
 							<input
 								type="text"
+								defaultValue={"landing page"}
 								name="catagories"
 								placeholder="Write Project Catagories"
 								className="outline-none rounded-md w-full bg-[#F8F9FA] py-3 px-5 text-black"
@@ -99,6 +103,7 @@ const EditPortfolio = () => {
 							</label>
 							<input
 								type="text"
+								defaultValue={"thumbnailUrl"}
 								name="thumbnailUrl"
 								placeholder="Paste Thumbnail URL"
 								className="outline-none rounded-md w-full bg-[#F8F9FA] py-3 px-5 text-black"
@@ -110,6 +115,7 @@ const EditPortfolio = () => {
 							</label>
 							<input
 								type="text"
+								defaultValue={"fullPageUrl"}
 								name="fullPageUrl"
 								placeholder="Paste Full Page URL"
 								className="outline-none rounded-md w-full bg-[#F8F9FA] py-3 px-5 text-black"

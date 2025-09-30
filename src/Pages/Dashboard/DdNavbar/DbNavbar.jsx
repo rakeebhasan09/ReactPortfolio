@@ -12,8 +12,8 @@ const DbNavbar = ({ openSideBar }) => {
 					</div>
 					<div className="logo">
 						<Link
+							to={"/dashboard"}
 							className="flex items-center gap-1"
-							href="/"
 							data-discover="true"
 						>
 							<img
@@ -49,13 +49,15 @@ const DbNavbar = ({ openSideBar }) => {
 						className="menu menu-sm dropdown-content bg-base-100 text-black rounded-box z-1 mt-3 w-52 p-2 shadow"
 					>
 						<li>
-							<a>Profile</a>
+							<Link to="/dashboard/profile">Profile</Link>
 						</li>
 						<li>
-							<a>Settings</a>
+							<Link to={"/dashboard/change-password"}>
+								Change Password
+							</Link>
 						</li>
 						<li>
-							<a>Logout</a>
+							<Link to={"/admin"}>Logout</Link>
 						</li>
 					</ul>
 				</div>

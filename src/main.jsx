@@ -24,6 +24,8 @@ import AddPortfolio from "./Pages/Dashboard/AddPortfolio/AddPortfolio";
 import EditPortfolio from "./Pages/Dashboard/EditPortfolio/EditPortfolio";
 import AddRecentProject from "./Pages/Dashboard/AddRecentProject/AddRecentProject";
 import EditRecentProject from "./Pages/Dashboard/EditRecentProject/EditRecentProject";
+import AdminProfile from "./Pages/Dashboard/AdminProfile/AdminProfile";
+import ChangePassword from "./Pages/Dashboard/ChangePassword/ChangePassword";
 
 const router = createBrowserRouter([
 	{
@@ -109,6 +111,14 @@ const router = createBrowserRouter([
 			{
 				path: "edit-recent-project",
 				element: <EditRecentProject />,
+			},
+			{
+				path: "profile",
+				element: <AdminProfile />,
+			},
+			{
+				path: "change-password",
+				element: <ChangePassword />,
 			},
 		],
 	},

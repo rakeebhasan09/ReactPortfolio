@@ -42,6 +42,7 @@ const EditToolkit = () => {
 							</label>
 							<input
 								type="text"
+								defaultValue={"Toolkit Name"}
 								name="toolkitname"
 								placeholder="Write Toolkit Name"
 								className="outline-none rounded-md w-full bg-[#F8F9FA] py-3 px-5 text-black"
@@ -53,6 +54,7 @@ const EditToolkit = () => {
 							</label>
 							<input
 								type="text"
+								defaultValue={"Toolkit URL"}
 								name="toolkiturl"
 								placeholder="Paste Image URL"
 								className="outline-none rounded-md w-full bg-[#F8F9FA] py-3 px-5 text-black"

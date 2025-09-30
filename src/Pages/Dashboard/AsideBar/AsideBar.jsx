@@ -11,8 +11,8 @@ const AsideBar = ({ mobileSideBar, openSideBar }) => {
 			<div className="navbar justify-between bg-base-100 min-h-0 py-2 px-4 shadow-sm">
 				<div className="logo">
 					<Link
+						to={"/dashboard"}
 						className="flex items-center gap-1"
-						href="/"
 						data-discover="true"
 					>
 						<img

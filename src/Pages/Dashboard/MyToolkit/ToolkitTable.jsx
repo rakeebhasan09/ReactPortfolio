@@ -1,8 +1,9 @@
 import { FaPen, FaTrash } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 
 const ToolkitTable = () => {
+	const navigate = useNavigate();
 	// Toolkit Delete Handling
 	const handleDeleteTollkit = () => {
 		Swal.fire({
@@ -19,6 +20,8 @@ const ToolkitTable = () => {
 					title: "Deleted!",
 					text: "Your file has been deleted.",
 					icon: "success",
+				}).then(() => {
+					navigate("/dashboard/toolkit");
 				});
 			}
 		});

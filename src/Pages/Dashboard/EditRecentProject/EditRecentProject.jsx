@@ -43,6 +43,7 @@ const EditRecentProject = () => {
 							</label>
 							<input
 								type="text"
+								defaultValue={"Project Name"}
 								name="projectName"
 								placeholder="Write Project Name"
 								className="outline-none rounded-md w-full bg-[#F8F9FA] py-3 px-5 text-black"
@@ -54,6 +55,7 @@ const EditRecentProject = () => {
 							</label>
 							<input
 								type="text"
+								defaultValue={"Live URL"}
 								name="liveUrl"
 								placeholder="Paste Live URL"
 								className="outline-none rounded-md w-full bg-[#F8F9FA] py-3 px-5 text-black"
@@ -65,6 +67,7 @@ const EditRecentProject = () => {
 							</label>
 							<input
 								type="text"
+								defaultValue={"Full Page URL"}
 								name="fullPageUrl"
 								placeholder="Paste Full Page URL"
 								className="outline-none rounded-md w-full bg-[#F8F9FA] py-3 px-5 text-black"
