@@ -66,7 +66,7 @@ const HeroBanner = () => {
 								<div>
 									<img
 										className="block mx-auto xl:!ml-auto xl:mr-0 z-10 relative"
-										src="https://i.ibb.co.com/9mzCC32q/banner-user-image-one.png"
+										src="https://i.ibb.co.com/DfQtrV3v/rakeeb-hasan.png"
 										alt="MD RAKEEB HASAN"
 									/>
 								</div>
