@@ -8,7 +8,7 @@ const Counter = () => {
 					<div className="w-full lg:w-1/2 pt-7 pr-7 pb-7 pl-7 md:pt-9 md:pr-[52px] md:pb-[51px] md:pl-[52px] bg-gradient-to-br from-[#060606] via-[#2F121B] to-[#760D2D] rounded-[20px]">
 						<div className="flex items-center gap-x-3 md:gap-x-5 lg:justify-between lg:gap-x-5 xl:gap-x-[30px] xxl:gap-x-[70px]">
 							<div className="text-brand text-[75px] md:text-[90px] lg:text-[80px] xl:text-[120px] xxl:text-[167px] leading-[100%] font-rubik font-medium">
-								25
+								0.5
 							</div>
 							<div className="text-white text-[35px] md:text-[50px] lg:text-[35px] xl:text-[48px] font-bold leading-[100%]">
 								Years Of experience
@@ -22,20 +22,20 @@ const Counter = () => {
 					</div>
 					<div className="w-full lg:w-1/2 flex flex-wrap gap-5 md:gap-[30px]">
 						<CounterCard
-							ammount={"20k+"}
-							subTitle={"Our Project Complete"}
+							ammount={"26"}
+							subTitle={"Project Complete"}
 						></CounterCard>
 						<CounterCard
-							ammount={"10k+"}
-							subTitle={"Our Natural Products"}
+							ammount={"10"}
+							subTitle={"Natural Products"}
 						></CounterCard>
 						<CounterCard
-							ammount={"200+"}
+							ammount={"20+"}
 							subTitle={"Clients Reviews"}
 						></CounterCard>
 						<CounterCard
-							ammount={"1,000+"}
-							subTitle={"our Satisfied Clients"}
+							ammount={"20+"}
+							subTitle={"Satisfied Clients"}
 						></CounterCard>
 					</div>
 				</div>
